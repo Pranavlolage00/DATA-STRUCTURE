@@ -6,7 +6,7 @@ int main()
   clrscr();
   printf("enter limit:-");
   scanf("%d",&n);
-  printf("ente n numbers in soarted order :-");
+  printf("enter numbers in soarted order:-");
   for(i=0; i<n; i++)
   {
     scanf("%d",&a[i]);
