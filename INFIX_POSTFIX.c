@@ -3,7 +3,7 @@
 #define MAX 50
 struct stack 
 {
-  int a[MAX];
+  char a[MAX];
   int top;
 }s;
 void init()
@@ -51,15 +51,15 @@ char pop()
      return val;
    }
 }
- int priority(char k)
+ int priority(char c)
  {
-    if(k=='(')
+    if(c=='(')
     return 0;
-    if(k=='+'||k=='-')
+    if(c=='+'||c=='-')
       return 1;
-    if(k=='*'||k=='/')
+    if(c=='*'||c=='/')
       return 2;
-    if(k=='$'||k=='^')
+    if(c=='$'||c=='^')
     return 3;
  }
  int main()
@@ -82,7 +82,7 @@ char pop()
       }
       else if(s1[i]==')')
       {
-         while(ch=pop()!='(')
+         while((ch=pop())!='(')
          {
            printf("%c",ch);
          }
@@ -102,4 +102,3 @@ char pop()
    }
  }
  
-
