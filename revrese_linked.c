@@ -34,7 +34,7 @@ void disp(struct node *list)
   struct node *temp;
   for(temp=list; temp->next!=NULL; temp=temp->next)
   {
-     printf("%d",temp->data);
+     printf("%d\t ",temp->data);
   }
 }
 struct node* reverse(struct node *list)
@@ -63,3 +63,13 @@ int main()
 }
 
 
+
+
+
+
+
+
+
+
+
+#include
